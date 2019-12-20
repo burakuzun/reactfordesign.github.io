@@ -77,17 +77,17 @@
 </div>
 <h1>A Designers Guide to the Terminal</h1>
 <p>You can learn how to use the terminal in a fairly short amount of time. You don't need a C.S. degree. You don't need to know how to hack any mainframes.</p>
-<p>With the Terminal, you can open, move, rename, copy and delete files. Same with directories (folders). The terminal is the Finder application on steroids. File management is just the start. It's the entry point for a slew of power tools.</p>
-<p>You can install and run programs without using a browser.<br>
+<p>With the terminal, you can open, move, rename, copy and delete files. Same with directories (folders). The terminal is the Finder app on steroids. File management is just the start. The terminal is the interface for a slew of power tools.</p>
+<p>You can install and run programs.<br>
 You can version files.<br>
-You can read offline documentation.<br>
+You can read documentation offline.<br>
 You can write scripts to automate tasks.<br>
 You can edit programs.<br>
 You can configure hidden OS settings.<br>
 You can tunnel into servers.<br>
 You can take full advantage of open source resources.  </p>
-<p>If you're using React, you can quickly spin up applications and install design systems.<br>
-You can meaningfully contribute to the execution of your design work.  </p>
+<p>If you're using React, you can quickly spin up applications and install design systems.
+If you're using git you can contribute to the execution of your design work.  </p>
 <p>The terminal is a powerful tool.<br>
 It's a powerful tool for designers.<br>
 It's a powerful tool for anyone.</p>
@@ -110,7 +110,7 @@ Extract the zip file, and import it into your terminal.</p>
 <code class="language-text">CMD</code> + <code class="language-text">,</code> to open up settings.<br>
 Import the <code class="language-text">.terminal</code> file and set it to default.<br>
 Restart the Terminal.  </p>
-<p>Next, find a monospace font you like:  </p>
+<p>If you aren't happy with the default monospace font, there are plenty of good options to choose from:  </p>
 <p>SF Mono (Pre-installed)<br>
 <a href="https://input.fontbureau.com/">Input</a><br>
 <a href="https://fonts.google.com/specimen/Inconsolata">Inconsolata</a><br>
@@ -141,9 +141,9 @@ Here are 7 commands that are important as you get started:</p>
 <h3>6. Remove  — <code class="language-text">rm</code></h3>
 <p><code class="language-text">rm</code> removes a file.<br>
 <code class="language-text">rm -d</code> removes a directory.<br>
-<code class="language-text">rm -rf node_modules</code> will recursively delete the <code class="language-text">node_modules</code> directory and every file/directory inside of it. Most commands you run in your terminal are harmless. This one isn't. Please be careful, you could end up deleting much more than you want.</p>
+<code class="language-text">rm -rf node_modules</code> will recursively delete the <code class="language-text">node_modules</code> directory and every file/directory inside of it. Most commands you run in your terminal are harmless. Be careful with the <code class="language-text">rm -rf</code> command, you could end up deleting much more than you want.</p>
 <h3>7. Open  — <code class="language-text">open</code></h3>
-<p><code class="language-text">open</code> will open a file in the using the default program for that filetype.<br>
+<p><code class="language-text">open</code> will open a file in the using the default program for that file type.<br>
 <code class="language-text">open index.html</code> will launch your default browser with the html page in the location bar.<br>
 <code class="language-text">open README.md</code> will open up your default markdown editor.</p>
 <h2>Important Locations</h2>
@@ -151,12 +151,12 @@ Here are 7 commands that are important as you get started:</p>
 <p><code class="language-text">/</code> is shorthand for your root directory.<br>
 <code class="language-text">~</code> is shorthand for your user directory.<br>
 <code class="language-text">.</code> is shorthand for your current directory.  </p>
-<p>You can change directory from any location into your user or root directory by using these shorthands.
-Additionally, <code class="language-text">cd</code> without a provided location will move you into your user direction</p>
+<p>You can change directory from any location into your user (<code class="language-text">cd ~</code>) or root (<code class="language-text">cd /</code>) directory by using these shorthand locations.
+Additionally, <code class="language-text">cd</code> without a provided location will move you into your user directory.</p>
 <p>You can use a tool like <a href="https://github.com/huyng/bashmarks">bashmarks</a> to save and visit commonly used directories.</p>
-<p>Typing long location names gets old. In addition to shorthand, you can autocomplete locations using the <code class="language-text">tab</code> button.</p>
+<p>Typing long location names gets old. In addition to shorthand, you can autocomplete locations using <code class="language-text">tab</code>.</p>
 <h2>Custom Prompts and Commands</h2>
-<p>By default your Terminal includes computer and user information to the prompt.</p>
+<p>By default your Terminal includes computer and user information in the prompt.</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Philips-MacBook:Documents philipdavis$</code></pre></div>
 <p>It's common to remove this and replacing it with the current location followed by a <code class="language-text">$</code> sign.</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Documents $</code></pre></div>
@@ -188,8 +188,7 @@ And now with the additional parameters.
 </div>
 <p>If you don't see a <code class="language-text">.bash_profile</code> in your home directory, you will need to create it.</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">touch .bash_profile</code></pre></div>
-<p>Once you have the file you can open it in your favorite text editor.
-I'm using atom with the cli tools.</p>
+<p>Once you have the file you can open it in a text editor.</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">atom .bash_profile</code></pre></div>
 <p>Once the file is opened, you can add the following string to replace the prompt cruft (computer name, location and user) with the location and a money <code class="language-text">$</code> sign.</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">export PS1=&quot;\W \$ &quot;</code></pre></div>
@@ -211,7 +210,7 @@ alias cra=&quot;create-react-app&quot;</code></pre></div>
 /static/2808e1222f09e9568ba8e86bc6401760/ba21f/logos.png 582w" sizes="(max-width: 582px) 100vw, 582px" loading="auto">
     </span>
 </div>
-In additional to basic shell commands there are a number of powerful tools that allow you do more in your terminal. I&apos;ve listed a few below. Each takes time to learn. Each has something valuable to offer. If you&apos;re looking to pick up a skill, here are some good options.
+In additional to basic shell commands there are a number of powerful tools that allow you do more in your terminal. I&apos;ve listed a few below. Each takes time to learn. Each has something valuable to offer.
 <p><strong><a href="https://git-scm.com/">git</a></strong> for versioning and collaboration.<br>
 <strong><a href="https://www.npmjs.com/">npm</a></strong> or <strong><a href="https://yarnpkg.com/lang/en/">yarn</a></strong> for installing and versioning node modules.<br>
 <strong><a href="https://brew.sh/">homebrew</a></strong> for installing programs and applications.<br>
@@ -222,7 +221,7 @@ In additional to basic shell commands there are a number of powerful tools that 
 <p>By default, output from your terminal is displayed in your terminal. You can reroute the output of a command to another file or to your clipboard by using the pipe command <code class="language-text">|</code>.</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">base64 file.jpg | pbcopy</code></pre></div>
 <p>Here we are running <code class="language-text">base64</code> on an image which converts it to a <a href="https://css-tricks.com/data-uris/">data URI</a>. We are then copying the data URI to our clipboard. <code class="language-text">pbcopy</code> and <code class="language-text">pbpaste</code> are the commands to copy and paste in terminal.</p>
-<p>You can use the <code class="language-text">&amp;&amp;</code> operator to chain commands. This is useful when you need to wait for commands to execute. The <code class="language-text">&amp;&amp;</code> operator acts as a queue. If the first command successfully executes the second will  begin running.</p>
+<p>You can use the <code class="language-text">&amp;&amp;</code> operator to chain commands. This is useful when you need to wait for commands to execute. The <code class="language-text">&amp;&amp;</code> operator acts as a queue. If the first command successfully executes the second will begin running.</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">npm install &amp;&amp; atom . &amp;&amp; npm start</code></pre></div>
 <p>Here, when <code class="language-text">npm install</code> is finished, atom will open with the current directory loaded and then <code class="language-text">npm start</code> will run.</p>
 <h2>sudo GoForthAndH4ck.exe</h2>
